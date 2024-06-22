@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="it" class="chiaro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--vedi questo, css-->
+    <title>Ripeti con me!-Materie</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="icon" type="image/png" href="Immagini/logo.png">
+
+    <link rel="stylesheet" href="stili.css">
+
+</head>
+
+<body>
+    <div class="navbar"> <!--vedi class-->
+
+        <img class="logo" src="./Immagini/logo.png" alt="logo" width="25px" height="25px">
+
+
+
+        <ul>
+            <li id="index"><a href="./index.html">Home</a></li>
+            <li id="pag1"><a href="./pag1.html">Materie</a></li>
+            <li id="pag2"><a href="./pag2.html">Prezzi</a></li>
+            <li id="pag3"><a href="./pag3.html">Contatti</a></li>
+        </ul>
+
+    </div>
+
+    <div class="layout-container">
+
+        <div class="container side-panel">
+            <h2>Chi sono</h2>
+            <hr>
+            <p>Ciao, mi chiamo Veronica e sono qui per aiutarti!
+                Questo lavoro nasce dalla passione di trasmettere
+                l'amore per il sapere e ha l'obiettivo di portare
+                la cultura nella vita di tutti i giorni. Se non hai
+                trovato il metodo di studio che fa per te oppure hai
+                bisogno di approfondire determinati argomenti, hai
+                trovato il sito giusto. Non ci saranno allievi o
+                insegnanti, ma solo persone disposte a imparare
+                qualcosa l'una dall'altra, volenterose e pronte a
+                sostenersi. <br><br><strong>Iniziamo questo viaggio nello studio insieme!</strong>
+
+            </p>
+        </div>
+
+        <div class="container main-panel">
+            <h2>Materie</h2>
+            <hr>
+            <div class="card-container">
+                <button class="card reduced-card">
+                    <details>
+                        <summary>
+                            Italiano
+                        </summary>
+                        <hr>Macro-Argomenti:
+                        <div class="lista">
+                            <ul>
+                                <div class="elementolista">
+                                    <li>Grammatica</li>
+                                    <li>Epica</li>
+                                    <li>Letteratura</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </details>
+                </button>
+                <button class="card reduced-card">
+                    <details class="details">
+                        <summary class="summary">
+                            Storia
+                        </summary>
+                        <hr>Macro-Argomenti:
+                        <div class="lista">
+                            <ul>
+                                <div class="elementolista">
+                                    <li>Età antica</li>
+                                    <li>Età medievale</li>
+                                    <li>Età moderna</li>
+                                    <li>Età contemporanea</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </details>
+                </button>
+                <button class="card reduced-card">
+                    <details>
+                        <summary>
+                            Inglese
+                        </summary>
+                        <hr>Macro-Argomenti:
+                        <div class="lista">
+                            <ul>
+                                <div class="elementolista">
+                                    <li>Grammatica</li>
+                                    <li>Letterautra</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </details>
+                </button>
+                <button class="card reduced-card">
+                    <details>
+                        <summary>
+                            Matematica
+                        </summary>
+                        <hr>Macro-Argomenti:
+                        <div class="lista">
+                            <ul>
+                                <div class="elementolista">
+                                    <li>Algebra</li>
+                                    <li>Geometria</li>
+                                </div>
+                            </ul>
+                        </div>
+                </button>
+                <button class="card reduced-card">
+                    <details>
+                        <summary>
+                            Scienze
+                        </summary>
+                        <hr>Macro-Argomenti:
+                        <div class="lista">
+                            <ul>
+                                <div class="elementolista">
+                                    <li>Scienze della Terra</li>
+                                    <li>Scienze biologiche</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </details>
+                </button>
+                <button class="card reduced-card">
+                    <details>
+                        <summary>
+                            Fisica
+                        </summary>
+                        <hr>
+                        <div class="lista">
+                            <ul>
+                                <div class="elementolista">
+                                    <li>Meccanica</li>
+                                    <li>Termodinamica</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </details>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <span><a href="mailto:vero03.uni@gmail.com">Email: vero03.uni@gmail.com</a></span>
+        <span><a href="tel: +393454989084">Telefono: +39 3454989084</a></span>
+        <!--SCRIPT ULTIMA MODIFICA-->
+
+        <script>
+            document.write("<time style='margin: auto 5px'>");
+            document.write(document.lastModified);
+            document.write("</time>")
+        </script>
+        <button id="interruttore-tema">
+            <span class="material-symbols-outlined light-mode">
+                sunny
+            </span>
+            <span class="material-symbols-outlined dark-mode">
+                dark_mode
+            </span>
+        </button>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

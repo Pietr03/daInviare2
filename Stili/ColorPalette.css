@@ -1,0 +1,48 @@
+
+
+:root,
+/*sezioni chiare*/
+:root.chiaro {
+  --bg-color: #fff;
+  --text-color: #000;
+  --text-color-hover: #f4ed62;
+
+  --primary: rgba(245, 41, 72, 0.991); 
+  --primary-foreground: rgba(250, 170, 21, 0.918); /*sfondo associato a colore testo, senno tutto bianco*/
+  --secondary: rgba(254, 135, 9, 0.934); /*testo caselle*/
+  --secondary-foreground: #f8e9db; /*sfondo caselle*/
+  --tertiary: #fff; /*colore testo footer*/
+  --tertiary-foreground: rgba(245, 41, 72, 0.991); /* sfondo footer */
+}
+
+
+ /*sezioni scure*/
+:root.scuro {
+  --bg-color: rgb(3, 24, 109);
+  --text-color: #fff;
+  --text-color-hover: #000; 
+
+  --primary: rgba(245, 41, 72, 0.991); /* Verde primario invertito */
+  --primary-foreground: #ffffff; /* Nero per alta leggibilità */
+  --secondary: rgba(254, 135, 9, 0.934); /* Verde secondario invertito */
+  --secondary-foreground: #43034d; /* Bianco chiaro per il contrasto */
+  --tertiary: #fff; /* Grigio scuro leggermente schiarito */
+  --tertiary-foreground: rgba(162, 4, 28, 0.991); /* Nero per alta leggibilità */
+}
+
+* {
+  font-family: 'Gill Sens', Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/*se metto la regola in fondo al foglio css la leggerà per ultima e avrà la max 
+priorità sulle altre regole. considera che in un testo più globale, quindi tutti 
+i fogli css dove vengono importati, visto che color palette viene importata per prima 
+è quella che verrà sovrascritta dalle altre. cosi se in una parte in basso del foglio css
+decido di cambiare un colore, sovrascrive le altre regole. 
+piu una regola è genercia e piu deve stare in alto; piu è specifica e piu in basso, nel css*/
+
+
+
+

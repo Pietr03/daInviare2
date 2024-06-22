@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="it" class="chiaro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--vedi questo, css-->
+    <title>Ripeti con me!-Prezzi</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link rel="icon" type="image/png" href="Immagini/logo.png" />
+
+    <link rel="stylesheet" href="stili.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <!--vedi class-->
+
+      <img
+        class="logo"
+        src="./Immagini/logo.png"
+        alt="logo"
+        width="25px"
+        height="25px"
+      />
+
+      <ul>
+        <li id="index"><a href="./index.html">Home</a></li>
+        <li id="pag1"><a href="./pag1.html">Materie</a></li>
+        <li id="pag2"><a href="./pag2.html">Prezzi</a></li>
+        <li id="pag3"><a href="./pag3.html">Contatti</a></li>
+      </ul>
+    </div>
+
+    <div class="layout-container">
+      <div class="container side-panel1">
+        <h2>Prezzi</h2>
+        <table class="tabella">
+          <tr>
+            <th>Classe</th>
+            <th>Prezzo Orario</th>
+            <th>Pacchetto Lezioni</th>
+          </tr>
+
+          <tr>
+            <td>Elementari</td>
+            <td>10 €</td>
+            <td>5 h=45 €</td>
+          </tr>
+
+          <tr>
+            <td>Medie</td>
+            <td>12 €</td>
+            <td>5 h=55 €</td>
+          </tr>
+
+          <tr>
+            <td>Superiori</td>
+            <td>15 €</td>
+            <td>5 h=65 €</td>
+          </tr>
+        </table>
+
+        <img src="./Immagini/scuola1.png" alt="scuola1">
+
+      </div>
+
+      <!--CATALOGO-->
+
+      <div class="container main-panel1">
+        <h2>Acquista una o più lezioni</h2>
+        <table
+          id="tabella-prodotti"
+          onchange="aggiornaTotaleCarrello()"
+          class="tabella"
+        >
+          <thead>
+            <tr>
+              <th>Titolo</th>
+              <th>Prezzo (€)</th>
+              <th>Quantità</th>
+            </tr>
+            <tr>
+              <td>Tipologia:</td>
+              <td colspan="2" style="text-align: center">
+                <select name="pacchetto" id="pacchetto">
+                  <option value="Pacchetto">Pacchetto (5h)</option>
+                  <option value="Singola lezione">Singola lezione (1h)</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Classe:</td>
+              <td colspan="2" style="text-align: center">
+                <select name="tipo-classe" id="tipo-classe">
+                  <option value="elementare">Elementare</option>
+                  <option value="media">Media</option>
+                  <option value="superiore">Superiore</option>
+                </select>
+              </td>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td>totale</td>
+              <td colspan="2" id="totale-carrello">0.00€</td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="full-width" style="text-align: center">
+          <button onclick="checkCarrello()">Invio</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span
+        ><a href="mailto:vero03.uni@gmail.com"
+          >Email: vero03.uni@gmail.com</a
+        ></span
+      >
+      <span><a href="tel: +393454989084">Telefono: +39 3454989084</a></span>
+      <!--SCRIPT ULTIMA MODIFICA-->
+
+      <script>
+        document.write("<time style='margin: auto 5px'>");
+        document.write(document.lastModified);
+        document.write("</time>");
+      </script>
+      <button id="interruttore-tema">
+        <span class="material-symbols-outlined light-mode"> sunny </span>
+        <span class="material-symbols-outlined dark-mode"> dark_mode </span>
+      </button>
+    </footer>
+
+    <!--SCRIPT CATALOGO-->
+
+    <script src="./Script/catalogo.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

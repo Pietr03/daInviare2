@@ -1,0 +1,42 @@
+
+section {
+  border: 1px solid blue;
+  width: 50%;
+  margin: auto; /* mette il blocco al centro */
+  margin-top: 40px;
+}
+section article {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  margin: 1%;
+  border-radius: 0px;
+}
+section article figure {
+  width: 80%;
+}
+section article figure img {
+  width: 100%;
+}
+section article button {
+  font-size: 30px;
+  background-color: var(--secondary); /*va bene perche sono pulsanti*/
+}
+.centrato {
+  text-align: center;
+}
+
+section progress::-webkit-progress-value {
+  background-color: var(--secondary);
+  border-radius: 5px 0px 0px 5px;
+}
+
+section progress::-webkit-progress-bar {
+   border-radius: 5px;
+}
+
+section progress {
+  height: 10px;
+  margin-bottom: 7px;
+}
+

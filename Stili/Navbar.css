@@ -1,0 +1,56 @@
+
+.navbar {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.715),
+    var(--primary-foreground)
+  );
+  width: 100%;
+  display: flex;
+
+  padding: 3px 6px;
+  max-height: 25px;
+}
+
+.navbar * {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar ul {
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+}
+
+.navbar li {
+  padding: 5px 20px;
+  list-style-type: none;
+}
+
+.navbar a {
+  color: var(--primary);
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  color: var(--tertiary);
+  background-color: var(--primary);
+  transition: 0.2s;
+}
+
+.navbar .logo {
+  margin: auto 10px;
+  max-width: 25px;
+}
+
+@media (max-width: 400px) {
+  .navbar li {
+    padding: 5px 5px;
+  }
+}
+
+.navbar .active a {
+  background-color: var(--quaternary);
+  color: var(--tertiary);
+}

@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="it" class="chiaro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--vedi questo, css-->
+  <title>Ripeti con me!-Contatti</title>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="icon" type="image/png" href="Immagini/logo.png">
+
+  <link rel="stylesheet" href="stili.css">
+
+</head>
+
+<body>
+  <div class="navbar"> <!--vedi class-->
+
+    <img class="logo" src="./Immagini/logo.png" alt="logo" width="25px" height="25px">
+
+    <ul>
+      <li id="index"><a href="./index.html">Home</a></li>
+      <li id="pag1"><a href="./pag1.html">Materie</a></li>
+      <li id="pag2"><a href="./pag2.html">Prezzi</a></li>
+      <li id="pag3"><a href="./pag3.html">Contatti</a></li>
+    </ul>
+  </div>
+
+  <h1 class="banner">Come contattarci</h1>
+  <p class="banner">Se vuoi avere maggiori informazion oppure ha qualche richiesta in particolare, 
+    non esitare a contattarci! Compila il modulo qua sotto inserendo i tuoi dati e 
+    scegliendo una data per prenotare una lezione di prova o un primo incontro 
+    conoscitivo con noi. Ti risponderemo al più presto. 
+  </p>
+
+  <div class="container1">
+
+    <form action="./result.html" method="GET" enctype="multipart/form-data">
+      <fieldset>
+        <legend class="legend">Nome</legend>
+        <label for="name">Inserisci il nome:</label>
+        <input type="text" name="name" id="name" required />
+      </fieldset>
+
+      <fieldset>
+        <legend class="legend">Cognome</legend>
+        <label for="lastname">Inserisci il cognome:</label>
+        <input type="text" name="lastname" id="lastname" required />
+      </fieldset>
+
+
+      <fieldset>
+        <legend class="legend">Email</legend>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+      </fieldset>
+
+      <fieldset>
+        <legend class="legend">Telefono</legend>
+        <label for="telefono">Telefono:</label>
+        <input type="tel" name="telefono" id="telefono" required />
+      </fieldset>
+
+      <br>
+
+      <div>
+        <label class="label" for="data">Prenota una lezione di prova</label>
+        <input type="date" name="data" id="data" required />
+      </div>
+
+      <br>
+
+      <div>
+        <label class="label" for="genere">Scuola:</label>
+        <input type="radio" name="scuola" id="scuola" />
+        <label for="maschio">Elementari</label>
+        <input type="radio" name="scuola" id="scuola" />
+        <label for="femmina">Medie</label>
+        <input type="radio" name="scuola" id="scuola" />
+        <label for="maschio">Superiori</label>
+      </div>
+
+      <div>
+        <br />
+        <label for="materia" class="label">Materia(solo una selezionabile):</label>
+        <select name="materia" id="">
+          <option value="matematica">matematica</option>
+          <option value="italiano">italiano</option>
+          <option value="storia">storia</option>
+          <option value="inglese">inglese</option>
+        </select>
+      </div>
+
+      <div>
+        <br />
+        <label for="note" class="label">Note:</label>
+        <textarea name="note" id=""></textarea>
+      </div>
+  </div>
+
+  <footer class="footer">
+    <span><a href="mailto:vero03.uni@gmail.com">Email: vero03.uni@gmail.com</a></span>
+    <span><a href="tel: +393454989084">Telefono: +39 3454989084</a></span>
+    <!--SCRIPT ULTIMA MODIFICA-->
+
+    <script>
+        document.write("<time style='margin: auto 5px'>");
+        document.write(document.lastModified);
+        document.write("</time>")
+    </script>
+    <button id="interruttore-tema">
+        <span class="material-symbols-outlined light-mode">
+            sunny
+        </span>
+        <span class="material-symbols-outlined dark-mode">
+            dark_mode
+        </span>
+    </button>
+</footer>
+<script src="./script.js"></script>
+</body>
+
+</html>

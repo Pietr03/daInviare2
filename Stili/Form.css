@@ -1,0 +1,14 @@
+.legend,
+.label {
+  color: var(--primary);
+}
+
+.container1 {
+  border: 1.5px solid var(--primary);
+  padding: 30px 20px;
+  text-align: left;
+
+  width: 600px;
+  margin: 20px auto;
+  width: 80%;
+}

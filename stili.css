@@ -1,0 +1,152 @@
+
+@import url("./Stili/ColorPalette.css");
+@import url("./Stili/Container.css");
+@import url("./Stili/Footer.css");
+@import url("./Stili/Navbar.css");
+@import url("./Stili/Form.css");
+@import url("./Stili/Cambiotema.css");
+
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  margin-bottom: 60px;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--quinary);
+}
+
+.banner {
+  text-align: center;
+  margin: 5px 20px;
+}
+
+.full-width {
+  max-width: 100%;
+  width: 100%;
+}
+
+/*tabella prezzi*/
+
+.tabella,
+.tabella th,
+.tabella td {
+  margin: 7px;
+  padding: 4px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tabella tr:nth-child(even) {
+  background-color: rgba(231, 165, 35, 0.377);
+}
+
+.tabella tr:nth-child(odd) {
+  background-color: rgba(236, 47, 104, 0.563);
+}
+
+.tabella th,
+.tabella-prodotti {
+  min-width: 80px;
+}
+.tabella {
+  max-width: 100%;
+}
+
+.immagine {
+  width: 100%;
+  display: flex;
+}
+.immagine img {
+  margin: 0px auto;
+}
+
+.cards *,
+.card * {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--secondary);
+}
+
+.cards {
+  text-align: center;
+  background-image: url(./Immagini/sfondobanner1.png);
+}
+
+.card {
+  color: var(--secondary);
+  background-color: var(--secondary-foreground);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  margin: 4px;
+  border: 2px, solid, black;
+  min-height: 50px;
+  height: fit-content;
+}
+
+.reduced-card {
+  width: 150px;
+}
+
+.card button:hover {
+  width: 160px;
+}
+
+/*fai hover sul bottone*/
+
+.lista {
+  text-align: left;
+}
+
+.details,
+.summary,
+.lista {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card details ul {
+  padding-left: 10px;
+}
+@media (max-width: 376px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 528px) {
+  .card {
+    width: 40%;
+  }
+}
+
+:root.scuro .light-mode {
+  display: none;
+}
+:root.chiaro .dark-mode {
+  display: none;
+}
+
+#interruttore-tema {
+  max-width: fit-content;
+}
+#interruttore-tema > span {
+  font-size: large;
+  padding: 10px;
+}
